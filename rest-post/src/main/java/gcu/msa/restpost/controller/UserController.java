@@ -2,11 +2,13 @@ package gcu.msa.restpost.controller;
 
 
 import gcu.msa.restpost.domain.User;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping
+@Tag(name="gcu swagger", description = "gcu management APIs")
 public class UserController {
 
     @GetMapping("/hello")
