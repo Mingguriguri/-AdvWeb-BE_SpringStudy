@@ -27,6 +27,9 @@ public class Tutorial {
     @Column(name = "published")
     private boolean published;
 
+    public Tutorial(String title, String description, boolean b) {
+    }
+
 
     @Override
     public String toString() {
